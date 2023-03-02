@@ -1,0 +1,8 @@
+name: DevSchoolB
+author: Fly_Ultra
+version: 1.0.0
+main: org.devschool.Main
+database: false
+description: "Plugin for teaching young Developers in DevSchool by ForestTech"
+
+commands:
