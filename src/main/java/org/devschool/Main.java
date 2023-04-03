@@ -3,6 +3,7 @@ package org.devschool;
 import jdk.javadoc.internal.doclets.toolkit.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.devschool.modules.customEvent.ListenerExample;
 import org.devschool.modules.messages.manager.MessagesManager;
 import org.devschool.modules.messages.taker.MessagesTaker;
 
@@ -25,6 +26,9 @@ public class Main extends JavaPlugin {
 
         messagesManager = new MessagesManager();
         messagesTaker = new MessagesTaker();
+
+
+        Bukkit.getPluginManager().registerEvents(new ListenerExample(), this);
 
         Bukkit.getLogger().log(Level.INFO, " -<|>-<|>-<|>-<|>-<|>-<|>-<|>-<|>-<|>-");
         Bukkit.getLogger().log(Level.INFO, " ");
